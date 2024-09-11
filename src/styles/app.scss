@@ -1,0 +1,112 @@
+.app-container {
+    display: flex;
+    max-height: 100vh;
+    overflow: hidden;
+
+    .sidebar {
+        max-height: 100vh;
+        width: 220px;
+        background-color: #fff;
+        border-right: 1px solid #ccc;
+        padding: 24px;
+
+        .sidebar-logo {
+            font-size: 28px;
+            font-weight: 800;
+
+            span {
+                color: rgb(65, 91, 231);
+            }
+        }
+
+        nav {
+            margin-top: 48px;
+            height: 88%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            a {
+                color: #1b1b1b;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s;
+                font-size: 16px;
+                font-weight: 500;
+
+                .sidebar-icon {
+                    margin-right: 8px;
+                    margin-bottom: -2px;
+                }
+
+                &:hover {
+                    color: rgb(65, 91, 231);
+                }
+
+            }
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    margin: 24px 0;
+                    padding: 8px;
+                    border-radius: 8px;
+
+                    &.active {
+                        background-color: rgb(205, 223, 255);
+
+                        a {
+
+                            color: rgb(65, 91, 231);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .main-container {
+        flex: 1;
+        background-color: rgb(243 244 246);
+        overflow-x: hidden;
+
+        .header {
+            height: 60px;
+            width: 100%;
+            padding: 24px;
+            margin-bottom: 24px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header-title {
+                font-size: 24px;
+            }
+        }
+
+        .content {
+            height: 100vh;
+        }
+    }
+
+}
+
+@media (max-width: 924px) {
+
+    /* Styles for tablets in portrait mode */
+    .app-container {
+        .sidebar {
+            display: none;
+        }
+
+        .content {}
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for smartphones */
+}

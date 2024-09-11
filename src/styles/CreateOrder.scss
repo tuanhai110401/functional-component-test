@@ -1,0 +1,118 @@
+.form-container {
+
+    .form-card {
+        background-color: #fff;
+        padding: 24px 48px;
+        border-radius: 12px;
+        margin-bottom: 36px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+        .form-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 36px;
+
+        }
+
+    }
+
+    .search-suggest {
+        position: absolute;
+        top: 86%;
+        left: 0;
+        width: 100%;
+        max-height: 310px;
+        background-color: #fff;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border: 1px solid #d3d3d3;
+        border-top: none;
+        padding: 24px;
+        overflow-x: hidden;
+
+        .suggest-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #d3d3d3;
+            border-radius: 12px;
+            margin-bottom: 12px;
+
+            &:hover {
+                background-color: #d3d3d3ab;
+                cursor: pointer;
+            }
+
+            .suggest-img {
+                flex: 0.2;
+                height: 80px;
+                border: 1px solid #d3d3d3;
+                border-radius: 8px;
+                overflow: hidden;
+
+                img {
+                    padding: 8px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .suggest-info {
+                flex: 0.8;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 12px;
+
+                .suggest-info_desc {
+                    font-weight: 700;
+                    margin-top: 8px;
+                }
+
+                .suggest-info_icon {
+                    min-width: 24px;
+                    font-size: 28px;
+                    font-weight: 800;
+                    color: rgb(0, 167, 0);
+                }
+            }
+        }
+    }
+
+    .cart-table-container {
+        max-height: 424px;
+
+        .table-row-img {
+            width: 80px;
+            height: 90px;
+            border: 1px solid #d3d3d3;
+            border-radius: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                padding: 8px;
+                object-fit: cover;
+            }
+        }
+
+        .cart-btn {
+            // background-color: blue;
+            padding: 4px;
+
+            .cart-btn-icon {
+                color: red;
+                font-size: 18px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.modal-container {
+
+    .modal-card {
+        border: 1px solid #d3d3d3;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        margin-top: 12px;
+
+        .modal-card_title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .modal-icon {
+            margin-right: 12px;
+            margin-bottom: -4px;
+        }
+    }
+}
+
+@media (max-width: 924px) {
+
+    .modal-container {
+
+        .modal-content {
+            width: 60%;
+            height: 300px;
+            padding: 8px;
+        }
+
+        .modal-card {
+            padding: 12px;
+        }
+    }
+}
